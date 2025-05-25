@@ -1,0 +1,18 @@
+/*[ TYPOGRAPHIES ]*/
+/* ------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Amgior', serif;
+    src: url('../../assets/fonts/AmgiorDemo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grogie', serif;
+    src: url('../../assets/fonts/GrogieDemo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
