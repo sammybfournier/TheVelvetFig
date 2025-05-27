@@ -24,6 +24,20 @@ body {
     /* Fond blanc par défaut */
 }
 
+h1 {
+    font-family: 'Grogie';
+    color: var(--cream);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond';
+    color: var(--cream);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
 /* Reset des styles pour les liens */
 a {
     text-decoration: none;
@@ -35,13 +49,18 @@ a {
 button,
 input,
 textarea {
-    border: none;
+    border: solid 0.15em var(--cream);
     background: none;
-    font-family: inherit;
+    font-family: 'Cormorant Garamond';
     font-size: inherit;
-    color: inherit;
+    text-transform: uppercase;
+    color: var(--cream);
     line-height: inherit;
-    padding: 0;
+    padding: 0.5em 1em;
+
+    &:hover {
+        background-color: var(--olive);
+    }
 }
 
 /* Enlever les styles des images */
