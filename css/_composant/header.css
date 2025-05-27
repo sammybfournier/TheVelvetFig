@@ -4,12 +4,68 @@
 header {
     height: 100vh;
     padding: 1em 1em 0 1em;
+
+    @media (min-width: 992px) {
+        padding: 1em 1.5em 0 1.5em;
+    }
 }
 
 .header--menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: solid 0.1em var(--cream);
+
+    .header--burger {
+        padding-left: 1em;
+        border-left: solid 0.1em var(--cream);
+    }
+
+    @media (min-width: 992px) {
+        border-bottom: none;
+
+        .header--logo {
+            padding-bottom: 1em;
+        }
+
+        .header--burger {
+            display: none;
+        }
+    }
+}
+
+.header--nav {
+    display: none;
+
+    @media (min-width: 992px) {
+        display: flex;
+        /* justify-content: start; */
+        align-items: center;
+        font-family: 'Cormorant Garamond';
+        font-size: 1.3em;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--cream);
+        border-bottom: solid 0.1em var(--cream);
+
+        a:hover {
+            color: var(--olive);
+            border-bottom: solid 0.05em var(--olive);
+        }
+
+        ol {
+            padding: 1em;
+
+            &:nth-child(4) {
+                padding-right: 2em;
+            }
+
+            &:last-of-type {
+                padding-left: 2em;
+                border-left: solid 0.1em var(--cream);
+            }
+        }
+    }
 }
 
 .header--circle {
@@ -20,6 +76,14 @@ header {
     height: 18em;
     border: solid 0.1em var(--cream);
     border-radius: 18em;
+
+    @media (min-width: 992px) {
+        top: 18em;
+        left: 20em;
+        width: 22em;
+        height: 22em;
+        border-radius: 22em;
+    }
 }
 
 .header--gradient {
@@ -29,7 +93,15 @@ header {
     width: 12em;
     height: 12em;
     border-radius: 12em;
-    background-image: radial-gradient(circle, var(--lavender) -70%, var(--lavenderTrans) 70%)
+    background-image: radial-gradient(circle, var(--lavender) -70%, var(--lavenderTrans) 70%);
+    
+    @media (min-width: 992px) {
+        width: 30em;
+        height: 30em;
+        border-radius: 30em;
+        top: 7em;
+        left: 20em;
+    }
 }
 
 .header--slogan {
@@ -45,6 +117,20 @@ header {
     h2 {
         margin-top: -0.7em;
     }
+
+    @media (min-width: 992px) {
+        top: 20em;
+        right: 4em;
+        text-align: right;
+
+        h1 {
+            font-size: 6em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+    }
 }
 
 .header--img {
@@ -54,6 +140,14 @@ header {
     width: 16em;
     height: 28em;
     object-fit: cover;
+    transition: all .2s;
+
+    @media (min-width: 992px) {
+        right: inherit;
+        left: 0;
+        width: 30em;
+        height: 32em;
+    }
 }
 
 .header--btns {
@@ -62,5 +156,14 @@ header {
 
     button:nth-child(2) {
         margin-top: 1em;
+    }
+
+    @media (min-width: 992px) {
+        right: 1.5em;
+
+        button:nth-child(2) {
+            margin-top: inherit;
+            margin-left: 1em;
+        }
     }
 }
