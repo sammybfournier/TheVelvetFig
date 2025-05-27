@@ -12,16 +12,36 @@
     <header>
         <div class="header--menu">
             <img src="assets/images/svg/logo.svg" alt="Logo 'The Velvet Fig'">
-            <img src="assets/images/svg/icones/menu.svg" alt="">
+            <img src="assets/images/svg/icones/menu.svg" alt="" onclick="openNav()">
         </div>
-        <div class="circle"></div>
+        <div class="header--circle"></div>
         <div class="header--slogan">
             <h1>Day to Dusk,</h1>
             <h2>Always Refined.</h2>
         </div>
-        <img src="assets/images/svg/placeholder.svg" alt="">
-        <button type="button"><a href="cafe.html">Explore the café</a></button>
-        <button type="button"><a href="reservation.html">Discover the restaurant</a></button>
+        <div class="header--gradient"></div>
+        <img class="header--img" src="assets/images/svg/placeholder.svg" alt="">
+        <div class="header--btns">
+            <button type="button"><a href="cafe.html">Explore the café</a></button>
+            <button type="button"><a href="reservation.html">Discover the restaurant</a></button>
+        </div>
+
+        <nav id="nav--primary">
+            <div class="nav--close">
+                <a href="#" id="langue">FR</a>
+                <a href="javascript:void(0)" id="btn--close" onclick="closeNav()">&times;</a>
+            </div>
+
+            <div class="nav--conteneur">
+                <ul class="nav--liste">
+                    <li class="nav--element"> <a href="cafe.html" onclick="redirection(event)">Café</a></li>
+                    <li class="nav--element"> <a href="reservation.html" onclick="redirection(event)">Restaurant</a>
+                    </li>
+                    <li class="nav--element"> <a href="menu.html" onclick="redirection(event)">Menu</a></li>
+                    <li class="nav--element"> <a href="about.html" onclick="redirection(event)">About</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <script src="js/script.js"></script>
