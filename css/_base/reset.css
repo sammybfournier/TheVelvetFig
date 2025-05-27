@@ -22,7 +22,6 @@ body {
     line-height: 1.5;
     background-color: var(--fig);
     /* Fond blanc par défaut */
-    padding: 1em;
 }
 
 h1 {
@@ -58,6 +57,10 @@ textarea {
     color: var(--cream);
     line-height: inherit;
     padding: 0.5em 1em;
+
+    &:hover {
+        background-color: var(--olive);
+    }
 }
 
 /* Enlever les styles des images */
