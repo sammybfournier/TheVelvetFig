@@ -16,3 +16,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Cormorant Garamond', serif;
+    src: url('../../assets/fonts/CormorantGaramond-VariableFont_wght.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Italic', serif;
+    src: url('../../assets/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
