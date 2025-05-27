@@ -20,7 +20,7 @@ html {
 body {
     font-family: sans-serif;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: var(--fig);
     /* Fond blanc par défaut */
     color: #000;
     /* Couleur du texte par défaut */
