@@ -1,0 +1,41 @@
+/*[ COMPOSANT HEADER ]*/
+/* ------------------------------------------------------------ */
+
+.header--slogan {
+    position: absolute;
+    top: 14em;
+    z-index: 10;
+
+    h1 {
+        width: max-content;
+        font-size: 2.8em;
+    }
+
+    h2 {
+        margin-top: -0.7em;
+    }
+
+    @media (min-width: 576px) {
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+    }
+
+    @media (min-width: 992px) {
+        top: 20em;
+        right: 4em;
+        text-align: right;
+
+        h1 {
+            font-size: 6em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}

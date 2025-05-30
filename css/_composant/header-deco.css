@@ -1,0 +1,51 @@
+/*[ COMPOSANT HEADER DECO/CIRCLE ]*/
+/* ------------------------------------------------------------ */
+
+.header--circle {
+    position: absolute;
+    top: 10em;
+    left: -4em;
+    width: 18em;
+    height: 18em;
+    border: solid 0.1em var(--cream);
+    border-radius: 18em;
+
+    @media (min-width: 992px) {
+        top: 18em;
+        left: 20em;
+        width: 22em;
+        height: 22em;
+        border-radius: 22em;
+    }
+
+    @media (min-width: 1200px) {
+        top: 12em;
+        left: inherit;
+        right: 4em;
+    }
+}
+
+.header--gradient {
+    position: absolute;
+    top: 22em;
+    left: 0;
+    width: 12em;
+    height: 12em;
+    border-radius: 12em;
+    background-image: radial-gradient(circle, var(--lavender) -70%, var(--lavenderTrans) 70%);
+    z-index: 5;
+    transition: all .5s;
+
+    @media (min-width: 992px) {
+        width: 30em;
+        height: 30em;
+        border-radius: 30em;
+        top: 7em;
+        left: 20em;
+    }
+
+    @media (min-width: 1200px) {
+        left: inherit;
+        right: 6em;
+    }
+}

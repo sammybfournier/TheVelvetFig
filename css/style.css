@@ -5,7 +5,15 @@
 @import url('_base/typo.css');
 
 /*[ importation du dossier _composant ]*/
+/* Composant header */
 @import url('_composant/header.css');
+@import url('_composant/header-navigation.css');
+@import url('_composant/header-deco.css');
+@import url('_composant/header-slogan.css');
+@import url('_composant/header-img.css');
+@import url('_composant/header-btns.css');
+
+@import url('_composant/navigation.css');
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');

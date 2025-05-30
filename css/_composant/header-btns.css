@@ -1,0 +1,31 @@
+/*[ COMPOSANT HEADER ]*/
+/* ------------------------------------------------------------ */
+
+.header--btns {
+    position: absolute;
+    bottom: 4em;
+    transition: all .5s;
+
+    button:nth-child(2) {
+        margin-top: 1em;
+    }
+
+    @media (min-width: 576px) {
+        button:nth-child(2) {
+            margin-left: 1em;
+        }
+    }
+
+    @media (min-width: 992px) {
+        right: 1.5em;
+
+        button:nth-child(2) {
+            margin-top: inherit;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.3em;
+        bottom: 2em;
+    }
+}
