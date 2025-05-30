@@ -1,0 +1,100 @@
+/*[ COMPOSANT NAVIGATION ]*/
+/* ------------------------------------------------------------ */
+
+#nav--primary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: var(--fig);
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+    .nav--close {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+
+        #langue {
+            font-family: 'Inter';
+            font-size: 1.5em;
+            color: var(--cream);
+            align-self: center;
+
+            &:hover {
+                color: var(--noir);
+            }
+        }
+
+        #btn--close {
+            height: max-content;
+            font-family: 'Inter';
+            font-size: 4em;
+            font-weight: 200;
+            color: var(--cream);
+            align-self: flex-start;
+
+            &:hover {
+                color: var(--noir);
+            }
+        }
+    }
+
+    .nav--conteneur {
+        position: relative;
+        z-index: 10;
+        padding: 0 1em;
+
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .nav--liste {
+        margin-top: 3em;
+    }
+
+    .nav--element {
+        font-family: 'Cormorant Garamond';
+        font-size: 2em;
+        text-transform: uppercase;
+        color: var(--cream);
+        padding: 0.8em 0;
+
+        &:last-child {
+            margin-top: 1em;
+            border-top: solid 0.05em var(--cream);
+        }
+
+        a:hover {
+            color: var(--olive);
+            border-bottom: solid 0.05em var(--olive);
+        }
+    }
+
+    .nav--circle {
+        position: absolute;
+        top: 9.5em;
+        left: -8em;
+        z-index: 0;
+        width: 24em;
+        height: 24em;
+        border: solid 0.1em var(--cream);
+        border-radius: 24em;
+
+        @media (min-width: 576px) {
+            top: 21.5em;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+/*[ Animatin des éléments du menu ]*/
+.fadeMenu {
+    transition: opacity 0.5s ease-in-out;
+}
