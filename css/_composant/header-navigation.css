@@ -1,0 +1,68 @@
+/*[ COMPOSANT HEADER NAVIGATION ]*/
+/* ------------------------------------------------------------ */
+
+.header--menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: solid 0.1em var(--cream);
+
+    .header--burger {
+        padding-left: 1em;
+        border-left: solid 0.1em var(--cream);
+    }
+
+    @media (min-width: 992px) {
+        border-bottom: none;
+
+        .header--logo {
+            padding-bottom: 1em;
+        }
+
+        .header--burger {
+            display: none;
+        }
+    }
+}
+
+.header--nav {
+    display: none;
+    transition: all .5s;
+
+    @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        font-family: 'Cormorant Garamond';
+        font-size: 1.3em;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--cream);
+        border-bottom: solid 0.1em var(--cream);
+
+        a:hover {
+            color: var(--olive);
+            border-bottom: solid 0.05em var(--olive);
+        }
+
+        ol {
+            padding: 1em;
+
+            &:nth-child(4) {
+                padding-right: 2em;
+            }
+
+            &:last-of-type {
+                padding-left: 2em;
+                border-left: solid 0.1em var(--cream);
+            }
+
+            @media (min-width: 1200px) {
+                padding: 1em 2em;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 1.6em;
+    }
+}
