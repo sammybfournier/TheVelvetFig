@@ -8,6 +8,7 @@
     width: 16em;
     height: 70vh;
     object-fit: cover;
+    z-index: 5;
     transition: all .5s;
 
     @media (min-width: 576px) {
