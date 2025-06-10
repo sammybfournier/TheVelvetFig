@@ -1,8 +1,7 @@
 /*[ STRUCTURE GÉNÉRALE DE LA PAGE ]*/
 /* ------------------------------------------------------------ */
-.interface {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+main {
+    box-shadow: inset 0em 4em 4em -3em var(--noir);
+    overflow-x: hidden;
 }
