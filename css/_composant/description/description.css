@@ -1,0 +1,24 @@
+/*[ COMPOSANT SECTION DESCRIPTION ]*/
+/* ------------------------------------------------------------ */
+
+main {
+    box-shadow: inset 0em 4em 4em -3em var(--noir);
+}
+
+.description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    padding: 0 3em 0 3em;
+    overflow: hidden;
+
+    @media (min-width: 576px) {
+        align-items: center;
+    }
+
+    @media (min-width: 992px) {
+        padding: 0 1.5em 0 1.5em;
+    }
+}

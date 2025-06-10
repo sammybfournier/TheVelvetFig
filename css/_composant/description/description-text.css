@@ -1,0 +1,22 @@
+/*[ COMPOSANT SECTION DESCRIPTION TEXT ]*/
+/* ------------------------------------------------------------ */
+
+.description--text {
+    position: relative;
+    max-width: 30em;
+    font-family: 'Inter';
+    font-weight: 200;
+    line-height: 2em;
+    color: var(--cream);
+    text-align: center;
+    z-index: 10;
+    transition: all .5s;
+
+    @media (min-width: 576px) {
+        font-size: 1.2em;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.5em;
+    }
+}
