@@ -9,6 +9,7 @@
     height: 18em;
     border: solid 0.1em var(--cream);
     border-radius: 18em;
+    transition: all .5s;
 
     @media (min-width: 992px) {
         top: 18em;
@@ -35,6 +36,13 @@
     background-image: radial-gradient(circle, var(--lavender) -70%, var(--lavenderTrans) 70%);
     z-index: 5;
     transition: all .5s;
+
+    @media (min-width: 769px) {
+        left: 22em;
+        width: 20em;
+        height: 20em;
+        border-radius: 20em;
+    }
 
     @media (min-width: 992px) {
         width: 30em;
