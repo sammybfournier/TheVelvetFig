@@ -1,0 +1,44 @@
+/*[ COMPOSANT SECTION DESCRIPTION DECO ]*/
+/* ------------------------------------------------------------ */
+
+.description--rect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-self: center;
+    width: 8em;
+    height: 22em;
+    border-top: 0.2em solid var(--cream);
+    border-bottom: 0.2em solid var(--cream);
+    z-index: 5;
+}
+
+.description--gradient {
+    position: absolute;
+    bottom: 1em;
+    left: -6em;
+    width: 20em;
+    height: 20em;
+    border-radius: 20em;
+    background-image: radial-gradient(circle, var(--lavender) -70%, var(--lavenderTrans) 70%);
+    z-index: 5;
+    transition: all .5s;
+
+    @media (min-width: 992px) {
+        bottom: -2em;
+        left: inherit;
+        right: -5em;
+        width: 24em;
+        height: 24em;
+        border-radius: 24em;
+    }
+
+    @media (min-width: 1200px) {
+        bottom: -12em;
+        right: inherit;
+        left: 5em;
+        width: 36em;
+        height: 36em;
+        border-radius: 36em;
+    }
+}
