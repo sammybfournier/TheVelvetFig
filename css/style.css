@@ -21,6 +21,9 @@
 @import url('_composant/description/description-deco.css');
 @import url('_composant/description/description-btn.css');
 
+/* Composant section description */
+@import url('_composant/highlights/highlights.css');
+
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');
